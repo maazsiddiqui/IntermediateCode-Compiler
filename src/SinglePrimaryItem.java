@@ -1,0 +1,24 @@
+
+
+class SinglePrimaryItem extends PrimaryItem
+
+// Represents the first <primary> in <term>
+
+{
+	// Primary primary; inherited from PrimaryItem
+
+	SinglePrimaryItem(Primary p)
+	{
+		primary = p;
+	}
+
+	void printParseTree(String indent) {
+		primary.printParseTree(indent);
+	}
+
+	void emitInstructions()
+	{
+		primary.emitInstructions();
+	}
+
+}
